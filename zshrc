@@ -92,7 +92,9 @@ source $HOME/.gvm/scripts/gvm
 # Git 
 alias gs="git status"
 alias gl="git log --oneline --graph --all --decorate"
-alias gls="git log --oneline --graph --all --decorate --stat"
+alias glv="git log  --graph --all --decorate --stat"
+alias glv1="git log --oneline --graph --all --decorate --stat"
+# Vagrant
 alias vg="vagrant"
 
 
