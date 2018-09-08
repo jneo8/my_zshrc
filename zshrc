@@ -88,15 +88,19 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-source $HOME/.gvm/scripts/gvm
 # Git 
 alias gs="git status"
 alias gl="git log --oneline --graph --all --decorate"
 alias glv="git log  --graph --all --decorate --stat"
+alias glvp="git log  --graph --all --decorate --stat -p"
 alias glv1="git log --oneline --graph --all --decorate --stat"
-# Vagrant
-alias vg="vagrant"
 
+# fzf
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+# GPU
+# export PATH=/usr/local/cuda-9.0/bin${PATH:+${PATH}}
+# export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH:+${LD_LIBRARY_PATH}}
+
+# GVM
+# [[ -s "/home/james/.gvm/scripts/gvm" ]] && source "/home/james/.gvm/scripts/gvm"
